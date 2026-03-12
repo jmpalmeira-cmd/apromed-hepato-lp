@@ -725,8 +725,7 @@
     // === NAME VALIDATION ===
     function validateName(value){
       const v=value.trim();
-      if(v.length<5) return 'Informe seu nome completo.';
-      if(!/\s/.test(v)) return 'Informe nome e sobrenome.';
+      if(v.length<3) return 'Informe seu nome.';
       if(/\d/.test(v)) return 'Nome não deve conter números.';
       return '';
     }
